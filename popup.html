@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>YoutubeLive Template</title>
+    <link rel="stylesheet" href="styles/popup.css">
+  </head>
+  <body>
+    <div id="tool">
+      <button id="fetch" class="btn" type="button">
+        <span class="icon">↓</span>
+        <span>保存</span>
+      </button>
+      <button id="option" class="btn" type="button">
+        <span class="icon">⚙</span>
+        <span>設定</span>
+      </button>
+    </div>
+    <p class="hint">
+      <span class="links">
+        <button id="open-studio" class="linkish" type="button">YouTube Studio を開く</button>
+        <button id="open-manage" class="linkish" type="button">ライブ予約管理を開く</button>
+      </span>
+      <span class="ver">v3.2.5.0</span>
+    </p>
+    <div id="list"></div>
+    <div id="message-panel">
+      <p id="message"></p>
+    </div>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>YoutubeLive Template</title>
+    <link rel="stylesheet" href="styles/options.css">
+  </head>
+  <body>
+    <header>
+      <h1>YoutubeLive Template <small>v3.2.5.0</small></h1>
+      <p class="lead">テンプレートの確認・編集・削除、JSONの書き出し／取り込みができます。</p>
+    </header>
+    <div class="toolbar">
+      <button id="add" type="button" class="btn">新規作成</button>
+      <button id="export" type="button" class="btn">JSON書き出し</button>
+      <label class="btn file">
+        JSON取り込み
+        <input id="import-file" type="file" accept="application/json">
+      </label>
+      <span id="count"></span>
+    </div>
+    <div class="container">
+      <div id="list">
+        <h2>テンプレート</h2>
+        <p class="muted">クリックでプレビュー</p>
+        <ul></ul>
+      </div>
+      <div class="preview-wrap">
+        <h2>プレビュー / 編集</h2>
+        <div id="preview" data-id="">
+          <input id="title" type="text" placeholder="配信タイトル">
+          <textarea id="body" placeholder="配信概要欄"></textarea>
+          <input id="videotags" type="text" placeholder='タグ（スペース区切り。スペースを含むタグは "二重引用符" で囲む）'>
+          <input id="category" type="text" placeholder="カテゴリ（画面に出ている名称。例: ゲーム）">
+          <input id="gameTitle" type="text" placeholder="ゲームのタイトル（省略可）">
+          <input id="playlists" type="text" placeholder="再生リスト（表示名|PLxxxx。複数はカンマ）">
+        </div>
+        <div id="tool">
+          <button id="edit" type="button" class="btn primary">保存</button>
+          <button id="delete" type="button" class="btn danger">削除</button>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/options.js"></script>
+  </body>
+</html>
