@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background: #f6f6f3;
+  color: #222;
+}
+header {
+  padding: 20px 28px 8px;
+  background: #fff;
+  border-bottom: 1px solid #e3e3e0;
+}
+h1 { margin: 0 0 6px; font-size: 22px; }
+h1 small { color: #888; font-size: 13px; font-weight: normal; }
+.lead { margin: 0; color: #555; }
+.toolbar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 28px;
+}
+.btn {
+  border: 1px solid #cfcfc8;
+  background: #fff;
+  border-radius: 6px;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.btn.primary { background: #6b7000; color: #fff; border-color: #6b7000; }
+.btn.danger { background: #b33; color: #fff; border-color: #b33; }
+.btn.file { display: inline-block; }
+.btn.file input { display: none; }
+#count { color: #666; margin-left: 8px; }
+.container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  padding: 0 28px 40px;
+}
+#list ul { list-style: none; margin: 0; padding: 0; }
+#list a {
+  display: block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #222;
+  background: #fff;
+  border: 1px solid #e3e3e0;
+  border-bottom: none;
+}
+#list li:last-child a { border-bottom: 1px solid #e3e3e0; }
+#list a.active, #list a:hover { background: #eef3c8; }
+.muted { color: #777; font-size: 13px; }
+#preview { display: flex; flex-direction: column; gap: 8px; }
+#title, #videotags, #body, #category, #gameTitle, #playlists {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font: inherit;
+}
+#body { min-height: 280px; resize: vertical; }
+#tool { margin-top: 12px; display: flex; gap: 8px; }
+h2 { font-size: 16px; margin: 12px 0 6px; }
