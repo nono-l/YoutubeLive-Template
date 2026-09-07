@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "YoutubeLive Template",
+    "description": "Save and apply YouTube Live title/description templates."
+  },
+  "appDescription": {
+    "message": "Save and apply YouTube Studio live title, description, and tags.",
+    "description": "Save and apply YouTube Live title/description templates."
+  }
+}

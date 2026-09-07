@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "YoutubeLive Template",
+    "description": "YoutubeLiveのテンプレートを保存・適用できる拡張です。"
+  },
+  "appDescription": {
+    "message": "YouTube Studioの配信タイトル・概要・タグをテンプレ化（2026 Studio対応）",
+    "description": "YoutubeLiveのテンプレートを保存・適用できる拡張です。"
+  }
+}

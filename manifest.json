@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDescription__",
+  "version": "3.2.5.0",
+  "default_locale": "ja",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YoutubeLive Template"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "permissions": ["storage", "scripting", "activeTab", "tabs"],
+  "host_permissions": [
+    "https://studio.youtube.com/*",
+    "https://www.youtube.com/*"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApcD9zWn6Xih5RQ7xZPMFeRcKh3zv5mm754XrRaiJ327255p+3IM7AAsQQ3nj31VarQRdWv6d0N3Tk9pu3/8Eu850ildcEndWufz76ohH+xWJQ6+cjP33ggG+JgI4xGsBxVJlujNClk+EBRoXXD2yU5wru1wqt0eQZ2iEBrWkD2xQfjjQidc7zvSSZVhu+HU/bYBT/+Bf92q6gghYZsVKT5OTYUAvZYlswrt8wiD05Clas//ah8+Wac95Rn42tZXz2JFHsQfVEYw8CuMKDnZ7VV+slJT3YYbVezvKdwwasKfoAZhBkiCilZDOkUIHnj2lmxcrDZMSFtX/PqYLONlG6wIDAQAB"
+}
