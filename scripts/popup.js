@@ -33,7 +33,7 @@ function isStudioUrl(url) {
 async function injectBridge(tabId) {
   await chrome.scripting.executeScript({
     target: { tabId },
-    files: ["scripts/bridge-a.js", "scripts/bridge-b.js"]
+    files: ["scripts/bridge.js"]
   });
 }
 
